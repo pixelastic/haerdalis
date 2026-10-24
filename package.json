@@ -4,5 +4,8 @@
   "type": "module",
   "license": "MIT",
   "main": "index.js",
-  "packageManager": "yarn@4.18.1"
+  "packageManager": "yarn@4.18.1",
+  "devDependencies": {
+    "aberlaas": "2.41.0"
+  }
 }
