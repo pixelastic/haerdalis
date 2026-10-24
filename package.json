@@ -2,10 +2,39 @@
   "name": "haerdalis",
   "version": "0.0.1",
   "type": "module",
+  "description": "haerdalis module",
+  "author": "pixelastic",
+  "homepage": "https://github.com/pixelastic/haerdalis",
+  "keywords": [
+    "haerdalis"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pixelastic/haerdalis"
+  },
+  "sideEffects": false,
   "license": "MIT",
-  "main": "index.js",
-  "packageManager": "yarn@4.18.1",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "packageManager": "yarn@4.18.0",
+  "files": [
+    "./lib/*.js"
+  ],
+  "exports": {
+    ".": "./lib/main.js"
+  },
+  "main": "./lib/main.js",
   "devDependencies": {
     "aberlaas": "2.41.0"
+  },
+  "scripts": {
+    "ci": "./scripts/ci",
+    "compress": "./scripts/compress",
+    "lint": "./scripts/lint",
+    "lint:fix": "./scripts/lint-fix",
+    "release": "./scripts/release",
+    "test": "./scripts/test",
+    "test:watch": "./scripts/test-watch"
   }
 }
